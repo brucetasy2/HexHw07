@@ -1,0 +1,472 @@
+/* 
+http://meyerweb.com/eric/tools/css/reset/   
+v2.0 | 20110126    License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 
+    1.HTML5 display-role reset for older browsers 
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+    user define 
+    general setting 
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  line-height: 42px;
+}
+
+.fl2442 {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.fl2436 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fl6475 {
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.fl8094 {
+  font-size: 80px;
+  line-height: 94px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb18 {
+  margin-bottom: 18px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb48 {
+  margin-bottom: 48px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mb56 {
+  margin-bottom: 56px;
+}
+
+.mb64 {
+  margin-bottom: 64px;
+}
+
+/* 1 */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/Week02_HW_01.png);
+  background-size: contain;
+  width: 1920px;
+  height: 958px; /* 搞不定圖片大小、暫寫死 */
+}
+
+.header h5 {
+  margin-top: 356px;
+  margin-left: 806px;
+  font-family: 'Roboto';
+  font-style: italic;
+  color: #ffffff;
+  width: 64px;
+  height: 28px;
+}
+
+.header h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 7100;
+  height: 94px;
+}
+
+.header h4 {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: italic;
+  margin-left: 819px;
+  width: 283px;
+  height: 70px;
+}
+
+.header img {
+  margin: 0 8px 0 8px;
+  display: block; /* vertical-align:middle */
+}
+.SocialSoftware {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 256px;
+}
+
+/* 2 */
+.main {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 1920px;
+  text-align: center;
+}
+
+.main h2 {
+  margin-top: 64px;
+  font-family: 'Roboto';
+  font-style: italic;
+  height: 75px;
+}
+
+.main img {
+  display: inline-block; /* block ?? */
+}
+
+.main h4 {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bold;
+  height: 28px;
+}
+
+.main h5 {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bold;
+  height: 64px;
+  width: 411px;
+  margin-left: 755px;
+}
+
+.main hr {
+  border: 1px 0 0 0;
+  width: 384px;
+}
+
+.main ul {
+  margin-bottom: 56px;
+}
+
+.main li {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bold;
+  height: 28px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.main span {
+  position: relative;
+}
+
+.main span:before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 1px;
+  left: -40px;
+  border-radius: 50%;
+  background: #891818;
+}
+
+/* 3 */
+.brand {
+  width: 1920px;
+  background: #000000 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+}
+
+.brand h2 {
+  margin-top: 63px;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bold;
+  height: 75px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.brand h4 {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bold;
+  height: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.brand ul {
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand li {
+  font-family: 'Roboto';
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+}
+
+.brand img {
+  display: inline-block; /* why not BLOCK*/
+  vertical-align: middle;
+}
+
+.brandImgUp {
+  height: 416px;
+}
+
+.brandImg588_416 {
+  width: 588px;
+  height: 416px;
+}
+
+.brandImg588_416_mr12 {
+  margin-right: 9px;
+}
+
+.brandImg588_416_ml12 {
+  margin-left: 10px;
+}
+
+/* 4 */
+.works {
+  width: 1920px;
+  background-image: url(images/Week02_HW_04_00.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.works h2 {
+  font-family: 'Roboto';
+  font-style: italic;
+  color: #000000;
+  text-align: center;
+  height: 75px;
+}
+
+.works p {
+  font-family: 'Roboto';
+  font-style: italic;
+  color: #000000;
+  text-align: center;
+  width: 226px;
+  height: 70px;
+}
+
+.galleryContainer {
+  width: 1920px;
+  padding-bottom: 162px;
+}
+.galleryContainer img {
+  display: block;
+}
+
+.galleryA {
+  display: flex;
+  justify-content: center;
+}
+
+.galleryA li {
+  margin: 0 12px 0 12px;
+}
+
+.galleryA h4 {
+  font-family: 'Roboto';
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  height: 28px;
+}
+
+/* 5 */
+.footer {
+  background: #000000;
+  width: 1920px;
+  text-align: center;
+  border: 1px solid;
+  padding-top: 64px;
+}
+
+.footer h2 {
+  font-family: 'Roboto';
+  font-style: italic;
+  height: 75px;
+  color: #ffffff;
+}
+
+.footer h4 {
+  font-family: 'Roboto';
+  font-style: italic;
+  height: 33px;
+  color: #ffffff;
+}
+
+.footerMb {
+  margin-bottom: 80px;
+}
+
+
